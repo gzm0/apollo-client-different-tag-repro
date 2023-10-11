@@ -18,9 +18,11 @@ export function Dog({ name }) {
   });
   if (loading) return <p>Loading...</p>;
   if (error) return <p>{error.message}</p>;
+
+  // Change the <div> to <p> to make the error go away.
   return (
-    <p>
+    <div>
       {data.dog.name} is a {data.dog.breed}
-    </p>
+    </div>
   );
 }
